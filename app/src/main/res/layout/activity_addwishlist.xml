@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addwishlist"
-    android:background="#ABC9FF">
+    android:background="#ABC9FF"
+    tools:context=".addwishlist">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         app:flow_verticalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,53 +23,54 @@
             android:id="@+id/title"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:elevation="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="70dp"
-            android:textSize="30dp"
             android:background="@drawable/edittext_bg"
+            android:elevation="50dp"
             android:hint="Title"
-            android:textAlignment="center">
-        </EditText>
+            android:textAlignment="center"
+            android:textSize="30dp"></EditText>
 
         <EditText
             android:id="@+id/description"
-            android:elevation="50dp"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:textSize="30dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/edittext_bg"
+            android:elevation="50dp"
             android:hint="Description"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:textSize="20dp">
         </EditText>
 
-        <EditText
+        <Button
             android:id="@+id/date"
-            android:elevation="50dp"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:textSize="30dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="40dp"
-            android:background="@drawable/edittext_bg"
+            android:backgroundTint="@color/white"
+            android:elevation="50dp"
             android:hint="Date"
-            android:textAlignment="center">
-        </EditText>
+            android:onClick="date"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp">
+
+        </Button>
 
         <EditText
             android:id="@+id/location"
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:textSize="30dp"
-            android:elevation="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/edittext_bg"
+            android:elevation="50dp"
             android:hint="Location"
-            android:textAlignment="center">
-        </EditText>
+            android:textAlignment="center"
+            android:textSize="30dp"></EditText>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -87,26 +88,28 @@
                 android:id="@+id/addimage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+"
-                android:textSize="50dp"
-                android:layout_marginTop="70dp"
                 android:layout_marginLeft="20dp"
-                android:elevation="100dp"
-                android:background="@drawable/button_bg">
+                android:layout_marginTop="70dp"
+                android:background="@drawable/button_bg"
+                android:elevation="50dp"
+                android:backgroundTint="@color/white"
+                android:text="+"
+                android:textSize="50dp">
             </Button>
         </LinearLayout>
 
         <Button
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:textColor="@color/black"
-            android:textSize="30dp"
             android:layout_marginLeft="50dp"
+
             android:layout_marginTop="0dp"
             android:backgroundTint="@color/teal_200"
-            android:hint="Done"
             android:elevation="50dp"
-            android:textAlignment="center">
+            android:hint="Done"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp">
         </Button>
 
 
